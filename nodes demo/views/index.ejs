@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Folder Manager</title>
+  <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Folder Manager</h1>
+
+    <h2>Create a New Folder</h2>
+    <form action="/add-folder" method="POST" class="form">
+      <input type="text" name="folderName" placeholder="Folder Name (e.g., My Folder)" required />
+      <input type="text" name="title" placeholder="Enter Title" required />
+      <textarea name="description" placeholder="Enter Description" required></textarea>
+      <button type="submit">Create Folder</button>
+    </form>
+
+    <h2>Existing Folders</h2>
+    <% folderContents.forEach(folder => { %>
+      <div class="folder">
+        <h3><%= folder.folderName %></h3>
+        <pre><%= folder.content %></pre>
+      </div>
+    <% }); %>
+  </div>
+</body>
+</html>

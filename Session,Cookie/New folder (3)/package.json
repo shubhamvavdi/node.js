@@ -1,5 +1,5 @@
 {
-  "name": "node",
+  "name": "new-folder-(3)",
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
@@ -10,8 +10,8 @@
   "license": "ISC",
   "description": "",
   "dependencies": {
+    "body-parser": "^1.20.3",
     "cookie-parser": "^1.4.7",
-    "express": "^4.21.2",
-    "express-session": "^1.18.1"
+    "express": "^4.21.2"
   }
 }
